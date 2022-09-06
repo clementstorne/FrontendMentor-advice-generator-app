@@ -18,3 +18,7 @@
 *.md
 
 /design
+
+/sass
+
+style.css.map
