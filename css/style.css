@@ -20,6 +20,11 @@ h1 {
   font-size: 24px;
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 28px;
+  }
+}
 
 button {
   height: 64px;
@@ -37,10 +42,19 @@ button:hover {
 }
 
 #card {
+  max-width: 540px;
   position: relative;
   background-color: #323a49;
   border-radius: 10px;
+  left: 50%;
+  transform: translateX(-50%);
   padding: 40px 0px;
+}
+@media screen and (min-width: 768px) {
+  #card {
+    border-radius: 14px;
+    padding: 48px 0px;
+  }
 }
 #card-top {
   color: #52ffa8;
@@ -49,21 +63,34 @@ button:hover {
   text-align: center;
   letter-spacing: 5px;
 }
+@media screen and (min-width: 768px) {
+  #card-top {
+    font-size: 13px;
+  }
+}
 #card-body {
   margin: 26px;
+}
+@media screen and (min-width: 768px) {
+  #card-body {
+    margin: 24px 51px 40px;
+  }
 }
 #card-separator {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
   justify-content: center;
-  margin-bottom: 64px;
+  margin-bottom: 24px;
 }
 #card-button {
   position: absolute;
   bottom: -32px;
   left: 50%;
   transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .shape {
@@ -80,10 +107,20 @@ button:hover {
   background-color: #cee3e9;
   margin: 0px 12px;
 }
+@media screen and (min-width: 768px) {
+  .line {
+    width: 196px;
+  }
+}
 
 #container {
   height: 100vh;
   padding: 120px 16px;
+}
+@media screen and (min-width: 768px) {
+  #container {
+    padding: 15.4861111111% 16px;
+  }
 }
 
 .attribution {
