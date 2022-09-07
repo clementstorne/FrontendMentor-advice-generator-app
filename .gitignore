@@ -15,7 +15,7 @@
 .DS_Store
 .prettierignore
 
-*.md
+style-guide.md
 
 /design
 
